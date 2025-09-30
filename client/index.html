@@ -3,11 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Book Nook</title>
+    <link rel="stylesheet" href="src/style.css" />
     <script type="module" src="/src/main.js" defer></script>
-    <link rel="stylesheet" href="/src/style.css" />
-    <title>client</title>
   </head>
   <body>
-    <div></div>
+    <header>
+      <h1>The Book Nook</h1>
+      <nav></nav>
+    </header>
+    <main>
+      <div class="left">
+        <div class="featured-book">
+          <h2>The Midnight Library</h2>
+          <h3>Matt Haig</h3>
+          <div class="genres">
+            <p class="genre">Fiction</p>
+            <p class="genre">Fantasy</p>
+          </div>
+          <img
+            src="src/the-midnight-library.jpg"
+            alt="Front cover of the book titled The Midnight Library"
+          />
+        </div>
+        <div class="more-from-the-author"></div>
+      </div>
+      <div class="right">
+        <div class="synopsis">
+          <h4>Synopsis:</h4>
+          <p>
+            The Midnight Library is a thought-provoking novel that
+            explores the life of Nora Seed, a woman filled with regret and
+            unhappiness. After a series of personal failures, Nora finds herself
+            in a magical library between life and death. Each book in the
+            library represents a different life Nora could have lived if she had
+            made different choices. Through exploring these alternate lives,
+            Nora discovers the profound truth about regret, possibility, and
+            what it means to live a meaningful life.
+          </p>
+        </div>
+        <div class="reviews" id="review-display">
+          <h4>Reviews:</h4>
+        </div>
+          <form class="form" id="form">
+            <h4>Submit your review here:</h4>
+            <label>Name</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="e.g. John"
+              required
+            />
+            <label>Comment</label>
+            <textarea
+               name="comment"
+              placeholder="Please add your review"
+              required></textarea>
+            <label>Rating</label>
+            <input
+              type="number"
+              name="rating"
+              min="1"
+              max="5"
+              placeholder="out of 5"
+              required
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>© Samantha Parkes</p>
+    </footer>
   </body>
 </html>
