@@ -18,12 +18,29 @@ const db = new pg.Pool({
 app.get("/", (req, res) => {
   res.status(200).json(`You're looking at my root route!`);
 });
+
 // Midnight Library
 app.get("/book-reviews", async (req, res) => {
   const result = await db.query(
     "SELECT * FROM book_reviews WHERE book_title = 'The Midnight Library' ORDER BY id DESC"
   );
 
+  res.json(result.rows);
+});
+
+//Doctor Sleep
+app.get("/book-reviews/doctor-sleep", async (req, res) => {
+  const result = await db.query(
+    "SELECT * FROM book_reviews WHERE book_title = 'Doctor Sleep' ORDER BY id DESC"
+  );
+  res.json(result.rows);
+});
+
+//Yes Please
+app.get("/book-reviews/yes-please", async (req, res) => {
+  const result = await db.query(
+    "SELECT * FROM book_reviews WHERE book_title = 'Yes Please"
+  );
   res.json(result.rows);
 });
 
