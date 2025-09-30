@@ -18,22 +18,26 @@ const db = new pg.Pool({
 app.get("/", (req, res) => {
   res.status(200).json(`You're looking at my root route!`);
 });
-
+// Midnight Library
 app.get("/book-reviews", async (req, res) => {
-  const result = await db.query("SELECT * FROM book_reviews ORDER BY id DESC");
+  const result = await db.query(
+    "SELECT * FROM book_reviews WHERE book_title = 'The Midnight Library' ORDER BY id DESC"
+  );
 
   res.json(result.rows);
 });
 
+//Post for ALL books
 app.post("/book-reviews", async (req, res) => {
   const body = req.body;
   const usernameFromClient = req.body.username;
   const commentFromClient = req.body.comment;
   const ratingFromClient = req.body.rating;
+  const bookTitle = req.body.book_title;
 
   const data = await db.query(
-    `INSERT INTO book_reviews (username, comment, rating) VALUES ($1, $2, $3)`,
-    [usernameFromClient, commentFromClient, ratingFromClient]
+    `INSERT INTO book_reviews (username, comment, rating, book_title) VALUES ($1, $2, $3, $4)`,
+    [usernameFromClient, commentFromClient, ratingFromClient, bookTitle]
   );
 
   res.json({ status: `Review inserted into database` });
