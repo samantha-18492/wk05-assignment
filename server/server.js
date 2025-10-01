@@ -20,6 +20,11 @@ app.get("/", (req, res) => {
 });
 
 //create a new get route for the homepage
+app.get("/book-details", async (req, res) => {
+  const result = await db.query("SELECT * FROM book_details ORDER BY title");
+
+  res.json(result.rows);
+});
 
 // Midnight Library
 app.get("/book-reviews/the-midnight-library", async (req, res) => {
