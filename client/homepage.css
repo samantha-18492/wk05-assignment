@@ -30,21 +30,40 @@ main {
 p {
   text-align: center;
   padding-bottom: 2rem;
+  color: #241b15;
 }
 
 .available-books {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
 }
 
 .book {
   flex: 1;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: solid #df9e3d;
+  background-color: #df9e3d;
+  min-width: 270px;
+}
+
+.book:hover {
+  border: solid #241b15;
+}
+
+h2,
+h3 {
+  color: #241b15;
+  text-align: center;
 }
 
 img {
-  height: 30rem;
-  /* padding-top: 0.75rem; */
+  height: 20rem;
+  padding-top: 0.75rem;
+  display: block;
+  margin: 0 auto;
 }
 
 footer {
@@ -59,6 +78,10 @@ footer {
 @media (min-width: 900px) {
   .available-books {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+
+  .book {
+    max-width: 350px;
   }
 }

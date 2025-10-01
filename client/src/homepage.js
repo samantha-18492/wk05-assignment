@@ -17,6 +17,10 @@ function createBooks(booksArray) {
 
     titleElement.innerText = book.title;
     authorElement.innerText = book.author;
+    imgElement.setAttribute(
+      "alt",
+      `Front cover of the book titled ${book.title}`
+    );
     imgElement.src = book.cover_url;
 
     div.setAttribute("class", "book");
