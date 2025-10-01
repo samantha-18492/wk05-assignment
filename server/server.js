@@ -19,6 +19,8 @@ app.get("/", (req, res) => {
   res.status(200).json(`You're looking at my root route!`);
 });
 
+//create a new get route for the homepage
+
 // Midnight Library
 app.get("/book-reviews/the-midnight-library", async (req, res) => {
   const result = await db.query(
