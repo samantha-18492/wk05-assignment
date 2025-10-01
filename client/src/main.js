@@ -2,7 +2,22 @@ const reviewDisplay = document.getElementById("review-display");
 
 //get details from database
 async function fetchReviews() {
-  const response = await fetch(`http://localhost:8080/book-reviews`);
+  let bookPath;
+
+  if (document.title === "The Midnight Library") {
+    bookPath = "the-midnight-library";
+  } else if (document.title === "Doctor Sleep") {
+    bookPath = "doctor-sleep";
+  } else if (document.title === "Yes Please") {
+    bookPath = "yes-please";
+  } else {
+    console.log("Title not found");
+    return;
+  }
+
+  const response = await fetch(
+    `http://localhost:8080/book-reviews/${bookPath}`
+  );
   const reviews = await response.json();
   createReviews(reviews);
 }

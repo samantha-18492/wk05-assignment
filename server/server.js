@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 });
 
 // Midnight Library
-app.get("/book-reviews", async (req, res) => {
+app.get("/book-reviews/the-midnight-library", async (req, res) => {
   const result = await db.query(
     "SELECT * FROM book_reviews WHERE book_title = 'The Midnight Library' ORDER BY id DESC"
   );
