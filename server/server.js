@@ -39,7 +39,7 @@ app.get("/book-reviews/doctor-sleep", async (req, res) => {
 //Yes Please
 app.get("/book-reviews/yes-please", async (req, res) => {
   const result = await db.query(
-    "SELECT * FROM book_reviews WHERE book_title = 'Yes Please"
+    "SELECT * FROM book_reviews WHERE book_title = 'Yes Please' ORDER BY id DESC"
   );
   res.json(result.rows);
 });
