@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff0e6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #d95d39;
+  color: #fff0e6;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-height: 60px;
+}
+
+main {
+  padding: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+p {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.available-books {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.book {
+  flex: 1;
+}
+
+img {
+  height: 30rem;
+  /* padding-top: 0.75rem; */
+}
+
+footer {
+  background-color: #d95d39;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 1rem;
+}
+
+@media (min-width: 900px) {
+  .available-books {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

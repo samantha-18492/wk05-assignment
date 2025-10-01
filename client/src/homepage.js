@@ -11,15 +11,15 @@ function createBooks(booksArray) {
   booksArray.forEach((book) => {
     const div = document.createElement("div");
 
-    const titleElement = document.createElement("p");
-    const authorElement = document.createElement("p");
+    const titleElement = document.createElement("h2");
+    const authorElement = document.createElement("h3");
     const imgElement = document.createElement("img");
 
     titleElement.innerText = book.title;
     authorElement.innerText = book.author;
     imgElement.src = book.cover_url;
 
-    div.setAttribute("class", "listOfBooks");
+    div.setAttribute("class", "book");
 
     div.append(titleElement, authorElement, imgElement);
 
