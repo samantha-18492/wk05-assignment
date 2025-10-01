@@ -33,4 +33,4 @@ function createBooks(booksArray) {
 
 fetchBooks();
 
-//do you use a click event to navigate to a new webpage?
+//create a click event for each div.book

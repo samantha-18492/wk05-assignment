@@ -51,6 +51,7 @@ p {
 
 .book:hover {
   border: solid #241b15;
+  cursor: pointer;
 }
 
 h2,
