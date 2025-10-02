@@ -54,6 +54,10 @@ p {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 h2,
 h3 {
   color: #241b15;
