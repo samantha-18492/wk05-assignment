@@ -9,7 +9,8 @@ async function fetchBooks() {
 
 function createBooks(booksArray) {
   booksArray.forEach((book) => {
-    const div = document.createElement("div");
+    const div = document.createElement("a");
+    div.href = `/${book.title}/`;
 
     const titleElement = document.createElement("h2");
     const authorElement = document.createElement("h3");
