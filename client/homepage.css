@@ -27,6 +27,14 @@ main {
   padding-bottom: 5rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff0e6;
+}
+
 p {
   text-align: center;
   padding-bottom: 2rem;

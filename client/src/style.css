@@ -36,12 +36,17 @@ main {
   padding-right: 1rem;
 }
 
-h2 {
+h2,
+h3 {
   color: #241b15;
 }
 
-h3 {
-  color: #241b15;
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff0e6;
 }
 
 .genres {
