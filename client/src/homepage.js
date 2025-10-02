@@ -2,7 +2,9 @@ const availableBooks = document.getElementById("available-books");
 
 //get details from database using async fetchBooks() with book-details and calls below function
 async function fetchBooks() {
-  const response = await fetch("http://localhost:8080/book-details");
+  const response = await fetch(
+    "https://wk05-assignment-server.onrender.com/book-details"
+  );
   const books = await response.json();
   createBooks(books);
 }
