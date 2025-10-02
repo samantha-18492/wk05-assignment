@@ -1,3 +1,13 @@
+User stories:
+
+- As a user, I want a homepage that shows me what books are available for review/have reviews
+- As a user, I want each book page to display the reviews associated with that specific book so I can see what other readers think
+- As a user, I want to be able to submit my own review and see the display update in real time without needing to refresh the page
+- As a user, I want the application to work as expected on my mobile device so that I can access and use it conveniently on the go
+- As a user, I want the design of the app to be clean and not detract from the purpose of the site
+- As a developer, I want the homepage to dynamically update using a backend database and DOM manipulation
+- As a developer, I want all reviews to be stored in a backend database
+
 Improvements:
 
 - Ordered reviews so the most recent review was displayed at the top (using id and DESC)
@@ -26,4 +36,4 @@ Reflections:
 
 - This week’s project has been a really valuable experience for me. I’ve enjoyed having the time to figure things out on my own and it’s been rewarding to work through the logic step by step before applying it to an app. Even though I know that some of the ways I approached the tasks aren’t exactly how they’d be done in industry, I feel good about being able to come up with my own solutions using the concepts we’ve learned so far.
 - One thing that really stood out to me this week is how different the experience is from a user perspective compared to the developer side. I feel like I've put in a lot of work this week, but when I look at the website as a user it doesn’t necessarily look like much has changed. It’s made me realise just how much goes on in the background that users never see, and how much we all take for granted when using websites or apps. It’s given me a new appreciation for the hidden complexity of development.
-- Because I haven't worked in a group this week, I will need to revisit the git branching teaching to make sure I understand how this works and become more familiar with collaboration tools like Trello. I'd also like to review the how to have a successful project information - unfortunately I haven't been able to digest this yet.
+- Because I haven't worked in a group this week, I will need to revisit the git branching teaching to make sure I understand how this works and become more familiar with collaboration tools like Trello. (I did use a checklist in OneNote for my daily actions and to keep track of progress for daily stand-ups.) I'd also like to review the how to have a successful project information - unfortunately I haven't been able to digest this yet.
