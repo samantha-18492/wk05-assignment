@@ -9,12 +9,12 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        "Doctor Sleep": resolve(__dirname, "Doctor Sleep/index.html"),
-        "The Midnight Library": resolve(
+        "doctor-sleep": resolve(__dirname, "doctor-sleep/index.html"),
+        "the-midnight-library": resolve(
           __dirname,
-          "The Midnight Library/index.html"
+          "the-midnight-library/index.html"
         ),
-        "Yes Please": resolve(__dirname, "Yes Please/index.html"),
+        "yes-please": resolve(__dirname, "yes-please/index.html"),
       },
     },
   },

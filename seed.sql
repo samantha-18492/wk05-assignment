@@ -49,3 +49,9 @@ INSERT INTO book_details (title, author, cover_url, synopsis) VALUES ('The Midni
 UPDATE book_details SET cover_url='https://m.media-amazon.com/images/I/71qsovx-x6L._UF894,1000_QL80_.jpg' WHERE id = 1;
 UPDATE book_details SET cover_url='https://m.media-amazon.com/images/I/71At7VPGc6L._UF1000,1000_QL80_.jpg' WHERE id = 2;
 UPDATE book_details SET cover_url='https://m.media-amazon.com/images/I/81DYcliY0JL._UF1000,1000_QL80_.jpg' WHERE id = 3;
+
+--added new column for url_slug and added data for existing entries
+ALTER TABLE book_details ADD url_slug TEXT;
+UPDATE book_details SET url_slug ='the-midnight-library' WHERE id =1;
+UPDATE book_details SET url_slug ='doctor-sleep' WHERE id =2;
+UPDATE book_details SET url_slug ='yes-please' WHERE id =3;
