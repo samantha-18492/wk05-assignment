@@ -19,7 +19,7 @@ function createBooks(booksArray) {
     const imgElement = document.createElement("img");
 
     titleElement.innerText = book.title;
-    authorElement.innerText = book.author;
+    authorElement.innerText = `by ${book.author}`;
     imgElement.setAttribute(
       "alt",
       `Front cover of the book titled ${book.title}`
