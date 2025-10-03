@@ -8,6 +8,10 @@ User stories:
 - As a developer, I want the homepage to dynamically update using a backend database and DOM manipulation
 - As a developer, I want all reviews to be stored in a backend database
 
+Wireframes:
+<img width="1062" height="637" alt="Image" src="https://github.com/user-attachments/assets/9d9c7e7b-e4d7-4ec4-9d88-652f55a82a18" />
+<img width="1261" height="635" alt="Image" src="https://github.com/user-attachments/assets/c3bbc3d1-ae38-495b-a8dc-87e0cf04f3e4" />
+
 Improvements:
 
 - Ordered reviews so the most recent review was displayed at the top (using id and DESC)
